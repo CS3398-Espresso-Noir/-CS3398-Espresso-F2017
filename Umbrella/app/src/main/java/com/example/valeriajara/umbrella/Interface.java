@@ -2,7 +2,6 @@ package com.example.valeriajara.umbrella;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-
 public class Interface extends AppCompatActivity {
 
     @Override
