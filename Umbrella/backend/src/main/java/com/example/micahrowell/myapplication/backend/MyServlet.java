@@ -1,5 +1,7 @@
 package com.example.micahrowell.myapplication.backend;
 
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 import java.io.UnsupportedEncodingException;
 
         import com.google.api.client.googleapis.auth.clientlogin.ClientLogin;
@@ -14,7 +16,8 @@ import java.io.UnsupportedEncodingException;
         import java.io.FileInputStream;
         import java.io.IOException;
         import java.io.UnsupportedEncodingException;
-        import java.util.Iterator;
+import java.net.URL;
+import java.util.Iterator;
         import java.util.Properties;
         import java.util.logging.Logger;
 
@@ -29,6 +32,20 @@ import java.io.UnsupportedEncodingException;
 
 public class MyServlet extends HttpServlet {
     static Logger Log = Logger.getLogger("com.example.micahrowell.myapplication.backend.MyServlet");
+
+    StringBuffer json = new StringBuffer();
+
+    public void callAPI(String city) throws IOException {
+        URL url = new URL("http://api.wunderground.com/api/d59e8a61df5f52ab/conditions/q/TX/San_Marcos.json");
+        BufferedReader reader = new BufferedReader(new InputStreamReader(url.openStream()));
+
+        String line;
+
+        while ((line = reader.readLine()) != null) {
+            json.append(line);
+        }
+        reader.close();
+    }
 
     @Override
     public void doGet(HttpServletRequest req, HttpServletResponse resp)
