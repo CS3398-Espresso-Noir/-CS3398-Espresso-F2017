@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="firebase-server-sdk-3.0.3">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.firebase/firebase-server-sdk/3.0.3/a56914cd263823fb57fdade6450feb8a2b7ac6e1/firebase-server-sdk-3.0.3.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.firebase/firebase-server-sdk/3.0.3/5d0414fd79612f86f7827af4b0b184cb931c45f2/firebase-server-sdk-3.0.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

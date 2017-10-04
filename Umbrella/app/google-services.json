@@ -15,6 +15,17 @@
       },
       "oauth_client": [
         {
+<<<<<<< HEAD
+=======
+          "client_id": "481008746593-35acobieidi4cvrcb0jj2lu8le877e4c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.valeriajara.umbrella",
+            "certificate_hash": "8f5e01ed76729950b351ab884ab9a162a1ffccb5"
+          }
+        },
+        {
+>>>>>>> Evan-Dev
           "client_id": "481008746593-s7edu1m6j230u44fgeqnmsnbt0gr26j9.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
