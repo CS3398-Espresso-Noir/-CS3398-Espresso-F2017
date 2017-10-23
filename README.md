@@ -1,6 +1,6 @@
 # -CS3398-Espresso-F2017
 
-
+![Build status](https://travis-ci.org/CS3398-Espresso-Noir/-CS3398-Espresso-F2017.svg?branch=master)
 
 This readme is a log of progress for the weather notification app, Umbrella.
 
