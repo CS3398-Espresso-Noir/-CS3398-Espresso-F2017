@@ -8,6 +8,7 @@ android:
     - android-26
 
 before_install:
+ - cd Umbrella
  - chmod +x gradlew
 
 script:
