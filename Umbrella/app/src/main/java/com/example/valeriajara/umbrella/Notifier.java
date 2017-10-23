@@ -1,6 +1,9 @@
 package com.example.valeriajara.umbrella;
 
+import android.app.NotificationManager;
+import android.support.v4.app.NotificationCompat;
 import android.util.Log;
+
 import com.google.firebase.messaging.FirebaseMessagingService;
 import com.google.firebase.messaging.RemoteMessage;
 
@@ -11,11 +14,19 @@ public class Notifier extends FirebaseMessagingService {
     private boolean hasBeenNotified = false;
 
     @Override
+    @SuppressWarnings("deprecation")
     public void onMessageReceived(RemoteMessage notification) {
+        String save = notification.getNotification().getBody();
         Log.d(TAG, "From: " + notification.getFrom());
         Log.d(TAG, "Notification Message Body: " + notification.getNotification().getBody());
         hasBeenNotified = true;
         lastNotificationSent = (System.currentTimeMillis() - notification.getSentTime());
+        NotificationCompat.Builder builder = new  NotificationCompat.Builder(this)
+                .setSmallIcon(R.mipmap.ic_launcher)
+                .setContentTitle(save)
+                .setContentText(notification.getData().get("message"));
+        NotificationManager manager = (NotificationManager)getSystemService(NOTIFICATION_SERVICE);
+        manager.notify(0, builder.build());
     }
 
     public long secondsSinceNotified() {
