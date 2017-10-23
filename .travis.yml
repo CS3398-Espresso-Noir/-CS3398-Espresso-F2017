@@ -12,5 +12,4 @@ before_install:
  - chmod +x gradlew
 
 script:
-   - cd Umbrella
    - ./gradlew build connectedCheck
