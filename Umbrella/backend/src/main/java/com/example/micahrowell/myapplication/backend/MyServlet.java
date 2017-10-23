@@ -1,49 +1,56 @@
 package com.example.micahrowell.myapplication.backend;
 
+import com.google.firebase.FirebaseApp;
+import com.google.firebase.FirebaseOptions;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
 import java.io.BufferedReader;
-import java.io.InputStreamReader;
-
-import org.json.JSONObject;
-
 import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.UnsupportedEncodingException;
 import java.net.URL;
+import java.util.Iterator;
+import java.util.Properties;
 import java.util.logging.Logger;
 
-import javax.servlet.ServletException;
-import javax.servlet.http.*;
+import javax.mail.Message;
+import javax.mail.MessagingException;
+import javax.mail.Session;
+import javax.mail.Transport;
+import javax.mail.internet.InternetAddress;
+import javax.mail.internet.MimeMessage;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 public class MyServlet extends HttpServlet {
     static Logger Log = Logger.getLogger("com.example.micahrowell.myapplication.backend.MyServlet");
 
     StringBuffer json = new StringBuffer();
 
-    @Override
-    public void doGet(HttpServletRequest req, HttpServletResponse resp)
-            throws IOException, ServletException {
-
+    public void callAPI(String city) throws IOException {
         URL url = new URL("http://api.wunderground.com/api/d59e8a61df5f52ab/conditions/q/TX/San_Marcos.json");
         BufferedReader reader = new BufferedReader(new InputStreamReader(url.openStream()));
+
         String line;
 
         while ((line = reader.readLine()) != null) {
             json.append(line);
         }
         reader.close();
-
-        JSONObject jo = new JSONObject(json.toString());
-
-        req.setAttribute("joke", jo.getJSONObject("value").getString("joke"));
-        req.getRequestDispatcher("/main.jsp").forward(req, resp);
     }
 
-    /*
     @Override
     public void doGet(HttpServletRequest req, HttpServletResponse resp)
             throws IOException {
-        Log.info("Sending the list email.");
+        Log.info("Sending the todo list email.");
 
         String outString;
-        outString = "<p>Sending the list email.</p><p><strong>Note:</strong> ";
+        outString = "<p>Sending the todo list email.</p><p><strong>Note:</strong> ";
         outString = outString.concat("the servlet must be deployed to App Engine in order to ");
         outString = outString.concat("send the email. Running the server locally writes a message ");
         outString = outString.concat("to the log file instead of sending an email message.</p>");
@@ -74,7 +81,7 @@ public class MyServlet extends HttpServlet {
         // As an admin, the app has access to read and write all data, regardless of Security Rules
         DatabaseReference ref = FirebaseDatabase
                 .getInstance()
-                .getReference("userCities");
+                .getReference("todoItems");
 
         // This fires when the servlet first runs, returning all the existing values
         // only runs once, until the servlet starts up again.
@@ -109,7 +116,7 @@ public class MyServlet extends HttpServlet {
                     Message msg = new MimeMessage(session);
                     //Make sure you substitute your project-id in the email From field
                     msg.setFrom(new InternetAddress("reminder@[FIREBASE_PROJECT_ID].appspotmail.com",
-                            "Reminder"));
+                            "Todo Reminder"));
                     msg.addRecipient(Message.RecipientType.TO,
                             new InternetAddress("[EMAIL@GMAIL.COM]", "Recipient"));
                     msg.setSubject("Things to do today");
@@ -129,5 +136,4 @@ public class MyServlet extends HttpServlet {
             }
         });
     }
-    */
 }
