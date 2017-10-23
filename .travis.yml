@@ -8,4 +8,5 @@ android:
     - android-26
 
 script:
+   - cd Umbrella
    - ./gradlew build connectedCheck
