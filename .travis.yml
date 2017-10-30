@@ -25,7 +25,7 @@ android:
 before_install:
  - cd Umbrella
  - chmod +x gradlew
-- sys-img-armeabi-v7a-addon-google_apis-google-$ANDROID_API_LEVEL
+ - sys-img-armeabi-v7a-addon-google_apis-google-$ANDROID_API_LEVEL
 # Emulator Management: Create, Start and Wait
 before_script:
   - android list targets
