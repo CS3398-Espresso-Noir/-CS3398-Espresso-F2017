@@ -2,6 +2,11 @@ package com.example.valeriajara.umbrella;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> development
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
@@ -18,6 +23,10 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 
+<<<<<<< HEAD
+=======
+>>>>>>> Evan-Dev
+>>>>>>> development
 public class Interface extends AppCompatActivity {
 
     @Override

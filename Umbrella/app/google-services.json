@@ -34,6 +34,10 @@
           }
         },
         {
+<<<<<<< HEAD
+=======
+>>>>>>> Evan-Dev
+>>>>>>> development
           "client_id": "481008746593-rpmhcjto3l74g190us8f3310amtdkeqf.apps.googleusercontent.com",
           "client_type": 3
         }
@@ -48,6 +52,13 @@
           "status": 1
         },
         "appinvite_service": {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+          "status": 1,
+          "other_platform_oauth_client": []
+=======
+>>>>>>> development
           "status": 2,
           "other_platform_oauth_client": [
             {
@@ -55,6 +66,10 @@
               "client_type": 3
             }
           ]
+<<<<<<< HEAD
+=======
+>>>>>>> Evan-Dev
+>>>>>>> development
         },
         "ads_service": {
           "status": 2

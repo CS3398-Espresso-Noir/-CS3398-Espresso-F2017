@@ -18,6 +18,33 @@
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.114"
+        app:layout_constraintHorizontal_bias="0.502"
+        android:id="@+id/textView" />
+
+    <ImageView
+        android:layout_width="131dp"
+        android:layout_height="219dp"
+        android:id="@+id/imageView"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/umbrella"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintVertical_bias="0.344" />
+=======
+>>>>>>> development
         app:layout_constraintTop_toBottomOf="@+id/cityText" />
 
     <ListView
@@ -35,6 +62,10 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintVertical_bias="0.949"
         app:layout_constraintTop_toBottomOf="@+id/addButton"></ListView>
+<<<<<<< HEAD
+=======
+>>>>>>> Evan-Dev
+>>>>>>> development
 
     <EditText
         android:id="@+id/cityText"
@@ -51,6 +82,32 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.042" />
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    <Button
+        android:layout_width="114dp"
+        android:layout_height="56dp"
+        android:text="Enter"
+        android:textSize="20dp"
+        android:id="@+id/button"
+        android:layout_alignTop="@+id/editText"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_alignStart="@+id/textView1"
+        android:layout_alignRight="@+id/editText"
+        android:layout_alignEnd="@+id/editText"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintVertical_bias="0.733"
+        app:layout_constraintTop_toTopOf="parent" />
+=======
+>>>>>>> Evan-Dev
+>>>>>>> development
 
 </android.support.constraint.ConstraintLayout>
 
