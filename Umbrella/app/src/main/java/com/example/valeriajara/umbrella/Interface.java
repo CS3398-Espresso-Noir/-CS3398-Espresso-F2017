@@ -2,14 +2,6 @@ package com.example.valeriajara.umbrella;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> development
-=======
->>>>>>> development
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
@@ -25,14 +17,8 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
+import com.google.firebase.messaging.FirebaseMessaging;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> Evan-Dev
->>>>>>> development
-=======
->>>>>>> development
 public class Interface extends AppCompatActivity {
 
     @Override
@@ -41,7 +27,7 @@ public class Interface extends AppCompatActivity {
         setContentView(R.layout.activity_interface);
 
         // Add items via the Button and EditText at the bottom of the window.
-        final EditText text = (EditText) findViewById(R.id.cityText);
+        //final EditText text = (EditText) findViewById(R.id.cityText);
         final Button button = (Button) findViewById(R.id.addButton);
 
         // Get ListView object from xml
@@ -120,7 +106,9 @@ public class Interface extends AppCompatActivity {
                 DatabaseReference childRef = myRef.push();
 
                 // Set the child's data to the value passed in from the text box.
-                childRef.setValue(text.getText().toString());
+                childRef.setValue("TEST STRING");
+
+                FirebaseMessaging.getInstance().subscribeToTopic("cities");
 
             }
         });
