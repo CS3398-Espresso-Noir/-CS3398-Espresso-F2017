@@ -43,8 +43,4 @@
             </intent-filter>
         </service>
     </application>
-<<<<<<< HEAD
 </manifest>
-=======
-</manifest>
->>>>>>> Evan-Dev
