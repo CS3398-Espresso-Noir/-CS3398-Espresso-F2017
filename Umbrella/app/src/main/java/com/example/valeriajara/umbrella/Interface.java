@@ -3,8 +3,11 @@ package com.example.valeriajara.umbrella;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> development
 =======
 >>>>>>> development
 import android.util.Log;
@@ -24,8 +27,11 @@ import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> Evan-Dev
+>>>>>>> development
+=======
 >>>>>>> development
 public class Interface extends AppCompatActivity {
 

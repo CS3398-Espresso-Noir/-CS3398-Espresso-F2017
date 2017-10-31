@@ -47,12 +47,14 @@
             </intent-filter>
         </service>
     </application>
-<<<<<<< HEAD
 </manifest>
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 </manifest>
 =======
 </manifest>
 >>>>>>> Evan-Dev
+>>>>>>> development
+=======
 >>>>>>> development

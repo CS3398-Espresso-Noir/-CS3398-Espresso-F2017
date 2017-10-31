@@ -15,8 +15,6 @@
       },
       "oauth_client": [
         {
-<<<<<<< HEAD
-=======
           "client_id": "481008746593-35acobieidi4cvrcb0jj2lu8le877e4c.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
@@ -35,8 +33,11 @@
         },
         {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> Evan-Dev
+>>>>>>> development
+=======
 >>>>>>> development
           "client_id": "481008746593-rpmhcjto3l74g190us8f3310amtdkeqf.apps.googleusercontent.com",
           "client_type": 3
@@ -53,11 +54,16 @@
         },
         "appinvite_service": {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
           "status": 1,
           "other_platform_oauth_client": []
 =======
+>>>>>>> development
+=======
+          "status": 1,
+          "other_platform_oauth_client": [],
 >>>>>>> development
           "status": 2,
           "other_platform_oauth_client": [
@@ -67,8 +73,11 @@
             }
           ]
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> Evan-Dev
+>>>>>>> development
+=======
 >>>>>>> development
         },
         "ads_service": {
