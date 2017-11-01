@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.valeriajara.umbrella.LoginOptions"
+    tools:showIn="@layout/activity_login_options">
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btnSignInGoogle"
+        android:onClick="signInGoogle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="Sign in with Google"
+        />
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btnSignInEmail"
+        android:onClick="signInEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign in with e-mail"
+        app:layout_constraintTop_toBottomOf="@id/btnSignInGoogle"
+        />
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btnSignInFacebook"
+        android:onClick="signInFacebook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign in with Faceboom"
+        app:layout_constraintTop_toBottomOf="@id/btnSignInEmail"
+        />
+
+</android.support.constraint.ConstraintLayout>
