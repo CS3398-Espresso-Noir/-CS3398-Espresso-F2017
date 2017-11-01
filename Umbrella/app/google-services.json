@@ -45,6 +45,11 @@
           "status": 1
         },
         "appinvite_service": {
+<<<<<<< HEAD
+=======
+          "status": 1,
+          "other_platform_oauth_client": [],
+>>>>>>> development
           "status": 2,
           "other_platform_oauth_client": [
             {
