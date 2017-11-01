@@ -1,7 +1,6 @@
 package com.example.valeriajara.umbrella;
 
 import android.app.job.JobService;
-import com.firebase.jobdispatcher.JobParameters;
 
 /**
  * Created by micahrowell on 10/31/17.
