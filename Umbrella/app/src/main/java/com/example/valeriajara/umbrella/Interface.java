@@ -1,7 +1,7 @@
 package com.example.valeriajara.umbrella;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
@@ -45,14 +45,14 @@ public class Interface extends AppCompatActivity {
         // Get a reference to the todoItems child items it the database
         final DatabaseReference myRef = database.getReference("userCities");
 
-        /*
+
         myRef.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
-                if (!snapshot.hasChild(text.toString())) {
+                if (!snapshot.hasChild(text.toString())) { //I negated conditional
                     // Create a new child with a auto-generated ID.
                     DatabaseReference childRef = myRef.push();
-
+                  // FirebaseMessaging.getInstance().subscribeToTopic(text.getText().toString());
                     // Set the child's data to the value passed in from the text box.
                     childRef.setValue(text.getText().toString());
                 }
@@ -63,7 +63,7 @@ public class Interface extends AppCompatActivity {
 
             }
         });
-        */
+
 
         // Assign a listener to detect changes to the child items
         // of the database reference.
