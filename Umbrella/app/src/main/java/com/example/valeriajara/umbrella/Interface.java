@@ -42,9 +42,9 @@ public class Interface extends AppCompatActivity {
         sanAntonio.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
-                    FirebaseMessaging.getInstance().subscribeToTopic("San Antonio");
+                    FirebaseMessaging.getInstance().subscribeToTopic("San_Antonio");
                 } else {
-                    FirebaseMessaging.getInstance().unsubscribeFromTopic("San Antonio");
+                    FirebaseMessaging.getInstance().unsubscribeFromTopic("San_Antonio");
                 }
             }
         });
@@ -52,9 +52,9 @@ public class Interface extends AppCompatActivity {
         sanMarcos.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
-                    FirebaseMessaging.getInstance().subscribeToTopic("San Marcos");
+                    FirebaseMessaging.getInstance().subscribeToTopic("San_Marcos");
                 } else {
-                    FirebaseMessaging.getInstance().unsubscribeFromTopic("San Marcos");
+                    FirebaseMessaging.getInstance().unsubscribeFromTopic("San_Marcos");
                 }
             }
         });
