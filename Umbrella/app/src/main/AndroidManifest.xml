@@ -11,9 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-<!--<<<<<<< HEAD
-        <activity android:name=".Interface">
-======= -->
+
         <!--                     ~~~~~~~~~~NOTIFICATION ICON NOT WORKING~~~~~~~~~~~~~
         <meta-data
             android:name="com.google.firebase.messaging.default_notification_icon"
@@ -24,9 +22,9 @@
         -->
         <!-- Set custom default icon. This is used when no icon is set for incoming notification messages.
      See README(https://goo.gl/l4GJaQ) for more. -->
-        <meta-data
+        <!--<meta-data
             android:name="com.google.firebase.messaging.default_notification_icon"/>
-        <!--   android:resource="@drawable/ic_stat_ic_notification" />
+           android:resource="@drawable/ic_stat_ic_notification" />
         Set color used with incoming notification messages. This is used when no color is set for the incoming
             notification message. See README(https://goo.gl/6BKBk7) for more. -->
         <meta-data
@@ -54,19 +52,6 @@
         <service android:name=".NotifierService">
             <intent-filter>
                 <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
-            </intent-filter>
-        </service>
-     <!--   <service
-            android:name=".UmbrellaFBMsgSvc">
-            <intent-filter>
-                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
-            </intent-filter>
-        </service>
-    -->    <service
-            android:exported="false"
-            android:name=".MyJobService">
-            <intent-filter>
-                <action android:name="com.firebase.jobdispatcher.ACTION_EXECUTE"/>
             </intent-filter>
         </service>
     </application>
