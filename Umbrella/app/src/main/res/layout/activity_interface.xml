@@ -21,6 +21,26 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.114"/>
 
+
+    <ImageView
+        android:layout_width="500dp"
+        android:layout_height="600dp"
+        android:id="@+id/imageView"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/rain"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintHorizontal_bias="0.277"
+        app:layout_constraintVertical_bias="0.461" />
+
+
     <ImageView
         android:layout_width="131dp"
         android:layout_height="219dp"
@@ -37,24 +57,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         android:layout_marginBottom="8dp"
         app:layout_constraintHorizontal_bias="0.502"
-        app:layout_constraintVertical_bias="0.344"
+        app:layout_constraintVertical_bias="0.365"
         app:layout_constraintTop_toBottomOf="@+id/cityText" />
-
-    <ListView
-        android:id="@+id/listView"
-        android:layout_width="371dp"
-        android:layout_height="337dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_weight="1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintVertical_bias="0.949"
-        app:layout_constraintTop_toBottomOf="@+id/addButton"/>
 
     <EditText
         android:id="@+id/cityText"
@@ -69,7 +73,8 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.042" />
+        app:layout_constraintVertical_bias="0.0"
+        tools:text=" " />
 
     <Button
         android:layout_width="114dp"
@@ -86,6 +91,22 @@
         android:layout_marginBottom="8dp"
         app:layout_constraintVertical_bias="0.733"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="371dp"
+        android:layout_height="337dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addButton"
+        app:layout_constraintVertical_bias="0.696" />
 
 </android.support.constraint.ConstraintLayout>
 
