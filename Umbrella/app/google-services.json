@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "481008746593",
+    "firebase_url": "https://umbrella-4582f.firebaseio.com",
+    "project_id": "umbrella-4582f",
+    "storage_bucket": "umbrella-4582f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:481008746593:android:3f6992c8cba959e5",
+        "android_client_info": {
+          "package_name": "com.example.valeriajara.umbrella"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "481008746593-35acobieidi4cvrcb0jj2lu8le877e4c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.valeriajara.umbrella",
+            "certificate_hash": "8f5e01ed76729950b351ab884ab9a162a1ffccb5"
+          }
+        },
+        {
+          "client_id": "481008746593-s7edu1m6j230u44fgeqnmsnbt0gr26j9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.valeriajara.umbrella",
+            "certificate_hash": "d56caa3e3f577b6cb5ca37694025f4370dd7574b"
+          }
+        },
+        {
+          "client_id": "481008746593-rpmhcjto3l74g190us8f3310amtdkeqf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAIb1mSEaY7zoNzJJ4VQRF97ZVe6L71JJ8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "481008746593-rpmhcjto3l74g190us8f3310amtdkeqf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
