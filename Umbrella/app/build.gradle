@@ -2,10 +2,17 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 26
+<<<<<<< HEAD
     buildToolsVersion "26.0.1"
     defaultConfig {
         applicationId "com.example.valeriajara.umbrella"
         minSdkVersion 15
+=======
+    buildToolsVersion '26.0.2'
+    defaultConfig {
+        applicationId "com.example.valeriajara.umbrella"
+        minSdkVersion 21
+>>>>>>> micah-development
         targetSdkVersion 26
         versionCode 1
         versionName "1.0"
@@ -22,10 +29,13 @@ android {
         exclude 'META-INF/LICENSE-FIREBASE.txt'
         exclude 'META-INF/NOTICE'
     }
+<<<<<<< HEAD
 
     lintOptions {
         abortOnError false
     }
+=======
+>>>>>>> micah-development
 }
 
 dependencies {
@@ -35,13 +45,22 @@ dependencies {
     })
     compile 'com.android.support:appcompat-v7:26.+'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
+<<<<<<< HEAD
     compile 'com.google.firebase:firebase-core:9.0.2'
     compile 'com.google.firebase:firebase-database:9.0.2'
     compile 'com.google.firebase:firebase-auth:9.0.2'
     compile 'com.google.firebase:firebase-messaging:9.0.2'
+=======
+    //compile 'com.google.firebase:firebase-database:9.0.0'
+    compile 'com.google.firebase:firebase-auth:9.0.2'
+    compile 'com.google.firebase:firebase-messaging:9.0.2'
+    //compile 'com.google.android.gms:play-services-auth:9.0.0'
+>>>>>>> micah-development
     compile 'com.google.android.gms:play-services-auth:9.0.2'
     compile 'com.android.support:design:26.+'
     testCompile 'junit:junit:4.12'
+    compile 'com.google.firebase:firebase-database:9.0.2'
+    compile 'com.firebase:firebase-jobdispatcher:0.8.4'
 }
 
 apply plugin: 'com.google.gms.google-services'
