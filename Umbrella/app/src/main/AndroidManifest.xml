@@ -12,7 +12,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <!--                     ~~~~~~~~~~NOTIFICATION ICON NOT WORKING~~~~~~~~~~~~~
+        <!--
+        ~~~~~~~~~~NOTIFICATION ICON NOT WORKING~~~~~~~~~~~~~
         <meta-data
             android:name="com.google.firebase.messaging.default_notification_icon"
             android:resource="@drawable/umbrella_notification" />
@@ -20,39 +21,37 @@
             android:name="com.google.firebase.messaging.default_notification_color"
             android:resource="@color/notification" />
         -->
-        <!-- Set custom default icon. This is used when no icon is set for incoming notification messages.
-     See README(https://goo.gl/l4GJaQ) for more. -->
-        <!--<meta-data
-            android:name="com.google.firebase.messaging.default_notification_icon"/>
-           android:resource="@drawable/ic_stat_ic_notification" />
-        Set color used with incoming notification messages. This is used when no color is set for the incoming
-            notification message. See README(https://goo.gl/6BKBk7) for more. -->
-        <meta-data
-            android:name="com.google.firebase.messaging.default_notification_color"
-            android:resource="@color/colorAccent" />
         <activity android:name=".Interface">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-            </intent-filter>
+
         </activity>
-        <activity android:name=".UmbrellaSignIn">
-<!-->>>>>>> Evan-Dev -->
+        <activity android:name=".GoogleSignIn">
+        </activity>
+
+        <service
+            android:name=".Notifier"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".NotifierService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <service android:name=".Notifier"
-            android:enabled="true"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
-            </intent-filter>
-        </service>
-        <service android:name=".NotifierService">
-            <intent-filter>
-                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
-            </intent-filter>
-        </service>
+        <activity
+            android:name=".LoginOptions"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
+
 </manifest>

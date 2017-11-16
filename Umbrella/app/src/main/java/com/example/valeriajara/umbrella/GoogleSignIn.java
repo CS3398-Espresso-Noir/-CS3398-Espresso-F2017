@@ -23,7 +23,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.GoogleAuthProvider;
 
-public class UmbrellaSignIn extends AppCompatActivity {
+public class GoogleSignIn extends AppCompatActivity {
     SignInButton button;
     FirebaseAuth mAuth;
     FirebaseAuth.AuthStateListener mAuthListener;
@@ -41,7 +41,7 @@ public class UmbrellaSignIn extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.activity_umbrella_sign_in);
+        setContentView(R.layout.activity_google_sign_in);
         mAuth = FirebaseAuth.getInstance();
         button = (SignInButton) findViewById(R.id.googleBtn);
 
@@ -55,7 +55,7 @@ public class UmbrellaSignIn extends AppCompatActivity {
         mAuthListener = new FirebaseAuth.AuthStateListener() {
             public void onAuthStateChanged(@NonNull FirebaseAuth fireBaseAuth) {
                 if (fireBaseAuth.getCurrentUser() != null) {
-                    startActivity(new Intent(UmbrellaSignIn.this, Interface.class));
+                    startActivity(new Intent(GoogleSignIn.this, Interface.class));
                 }
 
             }
@@ -73,7 +73,7 @@ public class UmbrellaSignIn extends AppCompatActivity {
                 .enableAutoManage(this /* FragmentActivity */, new GoogleApiClient.OnConnectionFailedListener() {
                     @Override
                     public void onConnectionFailed(@NonNull ConnectionResult connectionResult) {
-                        Toast.makeText(UmbrellaSignIn.this, "Something went wrong", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(GoogleSignIn.this, "Something went wrong", Toast.LENGTH_SHORT).show();
                     }
                 })
                 .addApi(Auth.GOOGLE_SIGN_IN_API, gso)
@@ -97,7 +97,7 @@ public class UmbrellaSignIn extends AppCompatActivity {
                 GoogleSignInAccount account = result.getSignInAccount();
                 firebaseAuthWithGoogle(account);
             } else {
-                Toast.makeText(UmbrellaSignIn.this, "Authentication failed", Toast.LENGTH_SHORT).show();
+                Toast.makeText(GoogleSignIn.this, "Authentication failed", Toast.LENGTH_SHORT).show();
             }
         }
     }
@@ -116,10 +116,10 @@ public class UmbrellaSignIn extends AppCompatActivity {
                         } else {
                             // If sign in fails, display a message to the user.
                             Log.w("TAG", "signInWithCredential:failure", task.getException());
-                            Toast.makeText(UmbrellaSignIn.this, "Authentication failed.",
+                            Toast.makeText(GoogleSignIn.this, "Authentication failed.",
                                     Toast.LENGTH_SHORT).show();
                             //updateUI(null);
-                         }
+                        }
 
                         // ...
                     }
