@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Umbrella</string>
+    <string name="title_activity_current_weather_info">CurrentWeatherInfo</string>
 </resources>

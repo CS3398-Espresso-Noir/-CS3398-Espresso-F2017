@@ -1,7 +1,10 @@
 package com.example.valeriajara.umbrella;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.ToggleButton;
 
@@ -18,6 +21,11 @@ public class Interface extends AppCompatActivity {
         ToggleButton houston = findViewById(R.id.subHoustonBtn);
         ToggleButton sanMarcos = findViewById(R.id.subSanMarcosBtn);
         ToggleButton sanAntonio = findViewById(R.id.subSanAnBtn);
+
+        Button currentWeatherForSanMarcosBtn = findViewById(R.id.currentWeatherForSanMarcosBtn);
+//        Button currentWeatherForAustinBtn = findViewById(R.id.currentWeatherForAustinBtn);
+//        Button currentWeatherForSanAntonioBtn = findViewById(R.id.currentWeatherForSanAntonioBtn);
+
 
         austin.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
@@ -58,6 +66,29 @@ public class Interface extends AppCompatActivity {
                 }
             }
         });
-
+        currentWeatherForSanMarcosBtn.setOnClickListener((new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Interface.this, CurrentWeatherInfo.class);
+                intent.putExtra("cityName", "San Marcos");
+                startActivity(intent);
+            }
+        }));
+//        currentWeatherForAustinBtn.setOnClickListener((new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent = new Intent(Interface.this, CurrentWeatherInfo.class);
+//                intent.putExtra("cityName", "Austin");
+//                startActivity(intent);
+//            }
+//        }));
+//        currentWeatherForSanAntonioBtn.setOnClickListener((new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent = new Intent(Interface.this, CurrentWeatherInfo.class);
+//                intent.putExtra("cityName", "San Antonio");
+//                startActivity(intent);
+//            }
+//        }));
     }
 }

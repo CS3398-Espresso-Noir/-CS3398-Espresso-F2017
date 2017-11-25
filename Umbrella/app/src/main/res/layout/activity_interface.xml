@@ -141,6 +141,39 @@
                     android:layout_marginEnd="75dp" />
             </RelativeLayout>
         </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/currentWeatherForSanMarcosBtn"
+            android:onClick="getCurrentWeatherForSanMarcos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Check weather in San Marcos"
+            />
+        </RelativeLayout>
+        <!--<RelativeLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content">-->
+            <!--<Button-->
+                <!--android:id="@+id/currentWeatherForAustinBtn"-->
+                <!--android:onClick="getCurrentWeatherForAustin"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Check weather in Austin"-->
+                <!--/>-->
+        <!--</RelativeLayout>-->
+        <!--<RelativeLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content">-->
+            <!--<Button-->
+                <!--android:id="@+id/currentWeatherForSanAntonioBtn"-->
+                <!--android:onClick="getCurrentWeatherForSanAntonio"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Check weather in San Antonio"-->
+                <!--/>-->
+        <!--</RelativeLayout>-->
     </LinearLayout>
 
 
