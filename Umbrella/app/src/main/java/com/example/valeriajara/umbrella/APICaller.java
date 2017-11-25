@@ -44,7 +44,15 @@ public class APICaller{
                   }
         }
       });
+
+
       thread.start();
+      try {
+          thread.join();
+      } catch (InterruptedException e){
+          rainfall = "API call interrupted, please try again.";
+          e.printStackTrace();
+      }
     }
 
 }
