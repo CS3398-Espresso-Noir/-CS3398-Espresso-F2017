@@ -58,9 +58,9 @@
                     android:id="@+id/subAustinBtn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
                     android:layout_alignParentTop="true"
-                    android:layout_marginEnd="75dp" />
+                    android:layout_marginEnd="94dp" />
             </RelativeLayout>
         </RelativeLayout>
         <RelativeLayout
@@ -84,9 +84,9 @@
                     android:id="@+id/subHoustonBtn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
                     android:layout_alignParentTop="true"
-                    android:layout_marginEnd="75dp" />
+                    android:layout_marginEnd="94dp" />
             </RelativeLayout>
         </RelativeLayout>
         <RelativeLayout
@@ -110,9 +110,9 @@
                     android:id="@+id/subSanAnBtn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
                     android:layout_alignParentTop="true"
-                    android:layout_marginEnd="75dp" />
+                    android:layout_marginEnd="94dp" />
             </RelativeLayout>
         </RelativeLayout>
         <RelativeLayout
@@ -136,21 +136,26 @@
                     android:id="@+id/subSanMarcosBtn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
                     android:layout_alignParentTop="true"
-                    android:layout_marginEnd="75dp" />
+                    android:layout_marginEnd="94dp" />
+
+                <Button
+                    android:id="@+id/currentWeatherForSanMarcosBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignStart="@+id/subSanMarcosBtn"
+                    android:layout_marginStart="95dp"
+                    android:text="NOW" />
+
+
             </RelativeLayout>
         </RelativeLayout>
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
-        <Button
-            android:id="@+id/currentWeatherForSanMarcosBtn"
-            android:onClick="getCurrentWeatherForSanMarcos"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Check weather in San Marcos"
-            />
+
         </RelativeLayout>
         <!--<RelativeLayout-->
             <!--android:layout_width="wrap_content"-->

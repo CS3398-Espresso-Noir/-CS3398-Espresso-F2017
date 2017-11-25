@@ -71,6 +71,7 @@ public class Interface extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(Interface.this, CurrentWeatherInfo.class);
                 intent.putExtra("cityName", "San Marcos");
+                intent.putExtra("apiName", "San_Marcos");
                 startActivity(intent);
             }
         }));

@@ -9,16 +9,18 @@ public class CurrentWeatherInfo extends Activity {
     TextView rainFall;
     APICaller apiCaller;
     String cityNameText;
+    String apiName;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        apiCaller = new APICaller();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_current_weather_info);
             setContentView(R.layout.activity_current_weather_info);
             cityName= findViewById(R.id.cityName);
             rainFall = findViewById(R.id.rainFall);
             cityNameText = getIntent().getStringExtra("cityName");
+            apiName = getIntent().getStringExtra("apiName");
+            apiCaller = new APICaller(apiName);
             cityName.setText(cityNameText);
-            rainFall.setText(apiCaller.getSanMarcos());
+            rainFall.setText(apiCaller.getWeather());
         }
     }
