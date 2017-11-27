@@ -21,7 +21,9 @@
             android:name="com.google.firebase.messaging.default_notification_color"
             android:resource="@color/notification" />
         -->
-        <activity android:name=".Interface"></activity>
+        <activity android:name=".Interface"
+                  android:theme="@style/AppTheme.NoActionBar">
+        </activity>
         <activity android:name=".GoogleSignIn"></activity>
 
         <service
@@ -53,7 +55,8 @@
         <activity
             android:name=".CurrentWeatherInfo"
             android:label="@string/title_activity_current_weather_info"
-            android:parentActivityName=".Interface">
+            android:parentActivityName=".Interface"
+            android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.valeriajara.umbrella.Interface" />
