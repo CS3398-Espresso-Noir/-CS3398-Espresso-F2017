@@ -1,6 +1,4 @@
 <resources>
     <string name="app_name">Umbrella</string>
-    <string name="title_activity_log_in">LogInActivity</string>
-    <string name="title_activity_main">MainActivity</string>
-    <string name="title_activity_login_options">LoginOptions</string>
+    <string name="title_activity_current_weather_info">CurrentWeatherInfo</string>
 </resources>

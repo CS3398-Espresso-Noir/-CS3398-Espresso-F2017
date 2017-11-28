@@ -30,7 +30,7 @@ public class Notifier extends FirebaseMessagingService {
     }
 
     public long secondsSinceNotified() {
-       return ((System.currentTimeMillis() - lastNotificationSent)/1000);
+        return ((System.currentTimeMillis() - lastNotificationSent)/1000);
     }
 
     public String message() {
