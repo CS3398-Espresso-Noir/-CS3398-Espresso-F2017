@@ -25,160 +25,61 @@
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="368dp"
-        android:layout_height="339dp"
+        android:layout_height="385dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0">
 
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-            <RelativeLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Austin"
-                    android:id="@+id/AustinText"
-                    android:layout_marginStart="75dp"/>
-            </RelativeLayout>
-            <RelativeLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/subAustinBtn"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="8dp"
+            android:text="Austin"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
-                <ToggleButton
-                    android:id="@+id/subAustinBtn"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"
-                    android:layout_alignParentTop="true"
-                    android:layout_marginEnd="94dp" />
-            </RelativeLayout>
-        </RelativeLayout>
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-            <RelativeLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Houston"
-                    android:id="@+id/HoustonText"
-                    android:layout_marginStart="75dp"/>
-            </RelativeLayout>
-            <RelativeLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/subHoustonBtn"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="8dp"
+            android:text="Houston"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
-                <ToggleButton
-                    android:id="@+id/subHoustonBtn"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"
-                    android:layout_alignParentTop="true"
-                    android:layout_marginEnd="94dp" />
-            </RelativeLayout>
-        </RelativeLayout>
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-            <RelativeLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="San Antonio"
-                    android:id="@+id/SanAnText"
-                    android:layout_marginStart="75dp"/>
-            </RelativeLayout>
-            <RelativeLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/subSanAnBtn"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="8dp"
+            android:text="San Antonio"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
-                <ToggleButton
-                    android:id="@+id/subSanAnBtn"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"
-                    android:layout_alignParentTop="true"
-                    android:layout_marginEnd="94dp" />
-            </RelativeLayout>
-        </RelativeLayout>
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-            <RelativeLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="San Marcos"
-                    android:id="@+id/SanMarcosText"
-                    android:layout_marginStart="75dp"/>
-            </RelativeLayout>
-            <RelativeLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-
-                <ToggleButton
-                    android:id="@+id/subSanMarcosBtn"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"
-                    android:layout_alignParentTop="true"
-                    android:layout_marginEnd="94dp" />
-
-                <Button
-                    android:id="@+id/currentWeatherForSanMarcosBtn"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentTop="true"
-                    android:layout_alignStart="@+id/subSanMarcosBtn"
-                    android:layout_marginStart="95dp"
-                    android:text="NOW" />
-
-
-            </RelativeLayout>
-        </RelativeLayout>
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-
-        </RelativeLayout>
-        <!--<RelativeLayout-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content">-->
-            <!--<Button-->
-                <!--android:id="@+id/currentWeatherForAustinBtn"-->
-                <!--android:onClick="getCurrentWeatherForAustin"-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:text="Check weather in Austin"-->
-                <!--/>-->
-        <!--</RelativeLayout>-->
-        <!--<RelativeLayout-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content">-->
-            <!--<Button-->
-                <!--android:id="@+id/currentWeatherForSanAntonioBtn"-->
-                <!--android:onClick="getCurrentWeatherForSanAntonio"-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:text="Check weather in San Antonio"-->
-                <!--/>-->
-        <!--</RelativeLayout>-->
+        <Button
+            android:id="@+id/subSanMarcosBtn"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="8dp"
+            android:text="San Marcos"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
     </LinearLayout>
 
 

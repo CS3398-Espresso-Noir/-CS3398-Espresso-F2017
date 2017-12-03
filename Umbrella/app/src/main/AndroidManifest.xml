@@ -22,7 +22,13 @@
             android:resource="@color/notification" />
         -->
         <activity android:name=".Interface"></activity>
-        <activity android:name=".GoogleSignIn"></activity>
+        <activity android:name=".GoogleSignIn">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
 
         <service
             android:name=".Notifier"
@@ -38,18 +44,6 @@
             </intent-filter>
         </service>
 
-        <activity
-            android:name=".MainActivity"
-            android:theme="@style/AppTheme.NoActionBar">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".LoginOptions"
-            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".CurrentWeatherInfo"
             android:label="@string/title_activity_current_weather_info"

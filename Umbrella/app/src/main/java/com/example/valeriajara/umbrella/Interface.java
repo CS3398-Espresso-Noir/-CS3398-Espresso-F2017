@@ -17,79 +17,50 @@ public class Interface extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_interface);
 
-        ToggleButton austin = findViewById(R.id.subAustinBtn);
-        ToggleButton houston = findViewById(R.id.subHoustonBtn);
-        ToggleButton sanMarcos = findViewById(R.id.subSanMarcosBtn);
-        ToggleButton sanAntonio = findViewById(R.id.subSanAnBtn);
+        Button austin = findViewById(R.id.subAustinBtn);
+        Button houston = findViewById(R.id.subHoustonBtn);
+        Button sanMarcos = findViewById(R.id.subSanMarcosBtn);
+        Button sanAntonio = findViewById(R.id.subSanAnBtn);
 
-        Button currentWeatherForSanMarcosBtn = findViewById(R.id.currentWeatherForSanMarcosBtn);
-//        Button currentWeatherForAustinBtn = findViewById(R.id.currentWeatherForAustinBtn);
-//        Button currentWeatherForSanAntonioBtn = findViewById(R.id.currentWeatherForSanAntonioBtn);
-
-
-        austin.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                if (isChecked) {
-                    FirebaseMessaging.getInstance().subscribeToTopic("Austin");
-                } else {
-                    FirebaseMessaging.getInstance().unsubscribeFromTopic("Austin");
-                }
-            }
-        });
-
-        houston.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                if (isChecked) {
-                    FirebaseMessaging.getInstance().subscribeToTopic("Houston");
-                } else {
-                    FirebaseMessaging.getInstance().unsubscribeFromTopic("Houston");
-                }
-            }
-        });
-
-        sanAntonio.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                if (isChecked) {
-                    FirebaseMessaging.getInstance().subscribeToTopic("San_Antonio");
-                } else {
-                    FirebaseMessaging.getInstance().unsubscribeFromTopic("San_Antonio");
-                }
-            }
-        });
-
-        sanMarcos.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                if (isChecked) {
-                    FirebaseMessaging.getInstance().subscribeToTopic("San_Marcos");
-                } else {
-                    FirebaseMessaging.getInstance().unsubscribeFromTopic("San_Marcos");
-                }
-            }
-        });
-        currentWeatherForSanMarcosBtn.setOnClickListener((new View.OnClickListener() {
+        sanMarcos.setOnClickListener((new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Interface.this, CurrentWeatherInfo.class);
                 intent.putExtra("cityName", "San Marcos");
                 intent.putExtra("apiName", "San_Marcos");
+                intent.putExtra("imageName", "san_marcos");
                 startActivity(intent);
             }
         }));
-//        currentWeatherForAustinBtn.setOnClickListener((new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent intent = new Intent(Interface.this, CurrentWeatherInfo.class);
-//                intent.putExtra("cityName", "Austin");
-//                startActivity(intent);
-//            }
-//        }));
-//        currentWeatherForSanAntonioBtn.setOnClickListener((new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent intent = new Intent(Interface.this, CurrentWeatherInfo.class);
-//                intent.putExtra("cityName", "San Antonio");
-//                startActivity(intent);
-//            }
-//        }));
+        austin.setOnClickListener((new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Interface.this, CurrentWeatherInfo.class);
+                intent.putExtra("cityName", "Austin");
+                intent.putExtra("apiName", "Austin");
+                intent.putExtra("imageName", "austin");
+                startActivity(intent);
+            }
+        }));
+        houston.setOnClickListener((new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Interface.this, CurrentWeatherInfo.class);
+                intent.putExtra("cityName", "Houston");
+                intent.putExtra("apiName", "Houston");
+                intent.putExtra("imageName", "houston");
+                startActivity(intent);
+            }
+        }));
+        sanAntonio.setOnClickListener((new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Interface.this, CurrentWeatherInfo.class);
+                intent.putExtra("cityName", "San Antonio");
+                intent.putExtra("apiName", "San_Antonio");
+                intent.putExtra("imageName", "san_antonio");
+                startActivity(intent);
+            }
+        }));
     }
 }
