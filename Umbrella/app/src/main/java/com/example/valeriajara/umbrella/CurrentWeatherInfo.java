@@ -26,7 +26,6 @@ public class CurrentWeatherInfo extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_current_weather_info);
-        setContentView(R.layout.activity_current_weather_info);
         cityName= findViewById(R.id.cityName);
         rainFall = findViewById(R.id.rainFall);
 
@@ -37,7 +36,7 @@ public class CurrentWeatherInfo extends Activity {
         constraintLayout = findViewById(R.id.layoutId);
         icon = findViewById(R.id.imageViewIcon);
         constraintLayout.setBackgroundResource(imageId);
-        //temperature = findViewById(R.id.temperature);
+        temperature = findViewById(R.id.temperatureText);
         apiCaller = new APICaller(apiName);
         APICaller.callAPI(); // CALLS API
         iconNumber = apiCaller.getCondition();
@@ -47,7 +46,7 @@ public class CurrentWeatherInfo extends Activity {
 
         int iconId = getResources().getIdentifier(iconName,"drawable","com.example.valeriajara.umbrella");
         icon.setImageResource(iconId);
-        cityName.setText(cityNameText);
+        cityName.setText(cityNameText+", Texas");
 
         ProgressDialog progress = new ProgressDialog(this);
         progress.setTitle("Loading");
@@ -55,31 +54,9 @@ public class CurrentWeatherInfo extends Activity {
         progress.setCancelable(false); // disable dismiss by tapping outside of the dialog
         progress.show();
 
-        rainFall.setText(apiCaller.getRainfall());
-      //  temperature.setText(apiCaller.getTemperatureF());
-      //  iconNumber = apiCaller.getCondition();
+        rainFall.setText("  " + apiCaller.getRainfall() + "  ");
+        temperature.setText("  " + apiCaller.getTemperatureF()+" F  ");
 
         progress.dismiss();
     }
-//    String getConditionString(int number) {
-//        String condition = new String();
-//        switch(number) {
-//            case 1: condition = ""
-//            case 2:
-//            case 3:
-//            case 4:
-//            case 5:
-//            case 6:
-//            case 7:
-//            case 8:
-//            case 9:
-//            case 10:
-//            case 11:
-//            case 12:
-//            case 13:
-//            case 14:
-//            case 15:
-//            default:
-//        }
-//    }
 }

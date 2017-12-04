@@ -4,19 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/login_background"
     tools:context="com.example.valeriajara.umbrella.Interface">
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="140dp"
-        android:layout_height="148dp"
+        android:layout_width="335dp"
+        android:layout_height="268dp"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:layout_marginBottom="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginTop="8dp"
-        android:src="@drawable/umbrella"
+        android:src="@drawable/umbrella_logo"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -39,7 +40,7 @@
 
         <Button
             android:id="@+id/subAustinBtn"
-            style="@style/Widget.AppCompat.Button.Colored"
+            style="@android:style/Widget.Button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
@@ -50,7 +51,7 @@
 
         <Button
             android:id="@+id/subHoustonBtn"
-            style="@style/Widget.AppCompat.Button.Colored"
+            style="@android:style/Widget.Button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
@@ -61,7 +62,7 @@
 
         <Button
             android:id="@+id/subSanAnBtn"
-            style="@style/Widget.AppCompat.Button.Colored"
+            style="@android:style/Widget.Button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
@@ -72,7 +73,7 @@
 
         <Button
             android:id="@+id/subSanMarcosBtn"
-            style="@style/Widget.AppCompat.Button.Colored"
+            style="@android:style/Widget.Button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
