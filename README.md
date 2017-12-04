@@ -14,11 +14,10 @@ A few of you can do with Umbrella:
 * Sign in with Google
 * Select between the following cities: Austin, San Marcos, San Antonio and Houston
 * Check the current weather of each city
-* Get notifications when it rains
 
 ## **Prerequisites**
 
-* Android Studio
+* Android Studio 3.0
 * Android emulator or Android phone to run the app
 
 ## **Using**
