@@ -46,7 +46,7 @@ Create your own branch forked from development, and test your changes in your lo
 ## **Log of added Features**
 
 * Evan - Notifications can be received from firebase console if app is in the foreground or background
-
+* Evan - Created API class to get realtime weather data from Wunderground
 * Micah - Firebase integration up and running
 
 * Zeb - Userbase setup with Firebase and login page 10/09/17
