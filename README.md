@@ -4,6 +4,8 @@
 
 # **Umbrella**
 
+![Alt text](http://i66.tinypic.com/2q3zlp1.png)
+
 Umbrella is a mobile application that provides users with weather notifications. Created for a class project at Texas State University.
 **Available for Android.**
 
